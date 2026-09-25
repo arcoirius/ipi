@@ -1,0 +1,30 @@
+{
+  "name": "ipi",
+  "version": "1.0.0",
+  "description": "123",
+  "main": "index.js",
+  "scripts": {
+  "start": "node src/app.js",
+  "lint": "eslint src",
+  "lint:fix": "eslint src --fix",
+  "format": "prettier --write \"src/**/*.js\"",
+  "format:check": "prettier --check \"src/**/*.js\""
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcoirius/ipi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/arcoirius/ipi/issues"
+  },
+  "homepage": "https://github.com/arcoirius/ipi#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "prettier": "^3.9.9"
+  }
+}
