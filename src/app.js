@@ -11,8 +11,8 @@ const secondNumber = 5;
 
 // const unused = 42;
 
-// const message = 'Prettier demo';
-// console.log(message);
+// const message="Prettier demo"
+// console.log(message)
 
 console.log('Calculator');
 
