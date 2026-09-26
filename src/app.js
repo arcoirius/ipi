@@ -3,6 +3,17 @@ import { add, subtract, multiply, divide } from './calculator.js';
 const firstNumber = 10;
 const secondNumber = 5;
 
+// var demo = 10;
+
+// if (demo == '10') {
+//   console.log('Lint demo');
+// }
+
+// const unused = 42;
+
+// const message = 'Prettier demo';
+// console.log(message);
+
 console.log('Calculator');
 
 console.log('Addition:', add(firstNumber, secondNumber));

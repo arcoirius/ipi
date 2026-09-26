@@ -10,25 +10,25 @@ Our group:
 - Hegazy Abdelrhman
 
 ## Project Goal
-The main goal of the project is to demonstrate how static code analysis can be integrated into a JavaScript project from scratch. 
-ESLint is used to detect common code-quality problems before the application is executed.
-Prettier is used as an additional formatting tool to keep the source code consistent and readable.
-
 The project demonstrates:
 - ESLint installation and configuration;
 - custom linting rules;
-- Node.js environment configuration;
 - automatic detection of code-quality problems;
 - automatic fixing of supported ESLint issues;
 - automatic code formatting with Prettier;
 - formatting validation;
 - simulation of an intentional linting failure.
 
-## Technologies
-- JavaScript
-- npm
-- ESLint
-- Prettier
+## Problem Solved by the Tool
+Without static analysis, many JavaScript problems are detected only during manual code review or application execution.
+ESLint automates this process and provides immediate feedback during development.
+
+It helps developers:
+- detect common programming mistakes;
+- reduce manual code-review work;
+- maintain consistent code quality;
+- detect problems before committing or deploying code.
+Prettier complements ESLint by automatically maintaining consistent formatting.
 
 ## Project Structure
 ```text
@@ -45,20 +45,6 @@ ipi/
 └── README.md
 ```
 
-### Source Files
-`src/app.js`
-Main application file. It imports calculator functions and demonstrates their execution.
-
-`src/calculator.js`
-Contains simple calculator functions used as demonstration source code for static analysis.
-
-`eslint.config.js`
-Contains ESLint configuration, JavaScript recommended rules, Node.js globals and additional project-specific rules.
-
-`.prettierrc`
-Contains code formatting rules used by Prettier.
-
-
 ## ESLint
 ESLint performs static analysis of JavaScript source files.
 
@@ -66,7 +52,6 @@ Run ESLint:
 ```bash
 npm run lint
 ```
-If the source code follows all configured rules, ESLint finishes without errors.
 
 ### Automatic Fix
 Some ESLint violations can be corrected automatically:
@@ -249,18 +234,6 @@ npm run format:check
 npm run format
 npm run format:check
 ```
-
-## Problem Solved by the Tool
-Without static analysis, many JavaScript problems are detected only during manual code review or application execution.
-ESLint automates this process and provides immediate feedback during development.
-It helps developers:
-
-- detect common programming mistakes;
-- enforce project coding conventions;
-- reduce manual code-review work;
-- maintain consistent code quality;
-- detect problems before committing or deploying code.
-Prettier complements ESLint by automatically maintaining consistent formatting.
 
 ## Conclusion
 This project demonstrates a basic but practical integration of ESLint into a JavaScript application.
